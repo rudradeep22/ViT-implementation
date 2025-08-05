@@ -8,7 +8,7 @@ The model is trained and evaluated on the [Weather Dataset](https://www.kaggle.c
 
 ## Performance
 
-The model achieves the following performance metrics on the test set:
+The model achieves the following performance metrics on the test set when trained for 50 epochs:
 - **Best Accuracy**: 68.25%
 
 ## Model Configuration

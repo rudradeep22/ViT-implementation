@@ -1,4 +1,3 @@
-# Ignore the datasets directory
-datasets/*
-
+__pycache__/
+datasets/
 .env

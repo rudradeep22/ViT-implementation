@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torchmetrics
+from torchsummary import summary
 from models.vit_model import ViT   
 import os
 from utils import plot_training_loss
@@ -30,6 +31,8 @@ train_losses = []
 val_losses = []
 
 val_accuracy = torchmetrics.Accuracy(task="multiclass", num_classes=NUM_CLASSES).to(device)
+
+summary(model, (3, IMG_SIZE, IMG_SIZE))
 
 for epoch in range(NUM_EPOCHS):
     model.train()
